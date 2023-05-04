@@ -30,8 +30,8 @@ class Game extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BonfireTiledWidget(
-      map: TiledWorldMap(
+    return BonfireWidget(
+      map: WorldMapByTiled(
         'map.tmj',
         objectsBuilder: {
           'coin': (prop) => Coin(prop.position),
